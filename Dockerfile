@@ -24,7 +24,6 @@ RUN npm install -g hermes-web-ui@0.6.17
 COPY entrypoint.sh /entrypoint.sh
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY apps.conf /etc/nginx/conf.d/apps.conf
-COPY ecosystem.config.js /app/ecosystem.config.js
 
 RUN chmod +x /entrypoint.sh
 ENV PATH=/usr/lib/node_modules/.bin:/root/.local/bin:$PATH
